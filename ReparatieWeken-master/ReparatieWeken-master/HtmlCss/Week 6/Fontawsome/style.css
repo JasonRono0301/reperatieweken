@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+}
+
+nav>ul>li{
+    display: inline-block;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+i{
+    font-size: 50px;
+}

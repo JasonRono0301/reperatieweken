@@ -1,0 +1,17 @@
+#rodeDoos{
+    background-color: red;
+}
+
+.grijzen{
+    background-color: gray;
+}
+
+div{
+    background-color: blue;
+}
+
+.blok{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+}

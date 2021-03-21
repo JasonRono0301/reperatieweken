@@ -1,0 +1,24 @@
+*{
+    margin: 0 auto;
+}
+
+.container{
+    margin-top: 20px
+
+}
+.volgorde{  
+    width: 400px;
+    height: 500px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.volgorde>h1{
+    padding-left: 20px;
+}
+
+.reverse{
+    width: 400px;
+    height: 500px;
+    border: 2px solid red;
+}
