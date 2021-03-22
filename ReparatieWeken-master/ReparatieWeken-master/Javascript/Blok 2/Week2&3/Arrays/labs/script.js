@@ -1,6 +1,8 @@
 //Lab arrays.
 
 function opdrachtA(){//Functie voor array opdracht A.
+    document.write("<h2> Opdracht A </h2>");
+
     var weekDagen = ["maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag","zondag"];
     document.write(weekDagen + "<br>");
 
@@ -30,7 +32,9 @@ function opdrachtA(){//Functie voor array opdracht A.
 }
 
 
-function opdrachtB(){
+function opdrachtB(){//Functie voor array opdracht B.
+    document.write("<h2> Opdracht B </h2>");
+
     var arrayEen = [1,2,3,4,5,6,7,8,9,10];
     var arrayTwee = [2,4,6,8,10,12,14,16,18,20];
 
@@ -59,17 +63,38 @@ function opdrachtB(){
             var antwoordVermenig = arrayTwee[i] * arrayEen[i];
                 document.write(arrayTwee[i] + " * " + arrayEen[i] + ' = ' + antwoordVermenig + "<br>");
         }
+        document.write("<br>");
     }
 
-    //Oproep van nested functies.
+    function delen(){
+        for(i=0; i < arrayEen.length && arrayTwee.length; i++){
+            console.log(arrayTwee[i] / arrayEen[i]);
+            var antwoordDelen = arrayTwee[i] / arrayEen[i];
+                document.write(arrayTwee[i] + " / " + arrayEen[i] + ' = ' + antwoordDelen + "<br>");
+        }
+        document.write("<br>");
+    }
+
+    //Oproep van nested functies in opdracht B.
     optellen();
     aftrekken();
     vermenigvuldigen();
+    delen();
+}
+
+function opdrachtC(){
+    var tafels = [2,4,6,8];
+    
+    for(i=0; i <= 10; i++){
+        console.log(i * tafels);
+    }
+    
 }
 
 
 
 
-//Oproepen van de functies.
+//Oproepen van de functies per opdracht.
 opdrachtA();
 opdrachtB();
+opdrachtC();
