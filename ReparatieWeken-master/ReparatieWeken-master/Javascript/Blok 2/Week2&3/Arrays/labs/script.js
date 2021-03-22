@@ -89,12 +89,14 @@ function opdrachtC(){//Opdracht C van array lab.
     var tafels = [2,4,6,8];
     
     for(i=0; i < tafels.length; i++){
-        for(a=0; a <= 10; a++){
-            console.log(tafels[i] * a);
-                var antwoordTafels = tafels[i] * a;
-                    document.write(tafels[i] + " x " + a + " = " + antwoordTafels + "<br>");
-        }
-        document.write("<br>")
+        document.write("<h2>" +'Tafel van ' +  tafels[i] + ':' +  "</h2>");
+        
+            for(a=1; a <= 10; a++){
+                console.log(tafels[i] * a);
+                    var antwoordTafels = tafels[i] * a;
+                        document.write(tafels[i] + " x " + a + " = " + antwoordTafels + "<br>");
+            }
+        document.write("<br>");
     }   
 }
 
