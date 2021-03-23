@@ -1,0 +1,23 @@
+*{
+    margin: 0 auto;
+}
+
+#container{
+    width: 600px;
+    height: 600px;
+    border: 2px solid red;
+    background-image: url(images/bg0.jpg);
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+    background-color: greenyellow;
+}
+
+img{
+    float: right;
+    margin-top: 440px;
+}
