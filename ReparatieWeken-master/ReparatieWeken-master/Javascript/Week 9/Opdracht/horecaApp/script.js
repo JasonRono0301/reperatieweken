@@ -1,7 +1,8 @@
 //Horeca App.
 
-function drinkOrder(){
-    
+function order(){
+
+
 }
 
-drinkOrder();
+order();
