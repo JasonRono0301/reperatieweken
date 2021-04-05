@@ -10,4 +10,4 @@ while(vraag != 'stop'){
     }
 }
 
-document.write(auto + "<br>");
+document.write(auto);
