@@ -1,0 +1,8 @@
+body{
+    margin:  0 auto;
+}
+
+#game-container{
+    width: 600px;
+    border: 2px solid red;
+}
