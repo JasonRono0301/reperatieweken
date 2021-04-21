@@ -28,3 +28,24 @@ nav{
     grid-row: 4;
     grid-column: 1;
 }
+
+ul{
+    grid-row: 5;
+    grid-column: 3;
+}
+
+ul > li{
+    padding-top: 50px;
+}
+
+article{
+    grid-row: 5;
+    grid-column: 4;
+    margin-left: 70px;
+}
+
+aside{
+    grid-row: 5;
+    grid-column: 5;
+    margin-left: 70px;
+}
