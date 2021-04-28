@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.rij1{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: red;
+}
+
+.rij2{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: blue;
+}
+
+.rij3{
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: yellow;
+}
+
+.rij4{
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: green;
+}
+
+.rij1Kollom2{
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: blue;
+}
