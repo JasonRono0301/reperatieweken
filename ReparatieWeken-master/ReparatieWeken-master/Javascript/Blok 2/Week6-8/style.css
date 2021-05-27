@@ -20,7 +20,14 @@ main{
 }
 
 #check{
+    padding-top: 20px;
     width: 500px;
     height: 150px;
     background-color: white;
+}
+
+button{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
