@@ -1,11 +1,20 @@
 var namen = [];
-var vraag;
 
-for(i = namen.length; i < 3; i++){
-    vraag = prompt('Hoeveel namen wilt u toevoegen.');
+for(i = 0; i < 3; i++){
+    var vraag = prompt('Type hier de namen in.');
     namen.push(vraag);
+    console.log(namen[i]);
 }
-console.log(namen);
+
+for(j = namen.length - 1; j >= 0; j--){
+    console.log(namen[j]);
+}
+
+
+
+
+
+
 
 
 
