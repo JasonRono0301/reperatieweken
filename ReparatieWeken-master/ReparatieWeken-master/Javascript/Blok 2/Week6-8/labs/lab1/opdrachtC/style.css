@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+#container{
+    margin: 20px auto;
+    width: 1000px;
+    background-color: gray;
+}
+
+button{
+    padding: 0 40px;
+    font-size: 40px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    background-color: green;
+}
