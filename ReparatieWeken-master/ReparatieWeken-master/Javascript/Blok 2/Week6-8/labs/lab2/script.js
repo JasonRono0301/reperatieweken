@@ -1,14 +1,18 @@
+var container = document.getElementById('container');
 var namen = [];
 
-for(i = 0; i < 3; i++){
-    for(j = 3; j < i; i--){
-        console.log(j);
+function arrayNames(){
+    var vraag = prompt('Hoeveel namen wilt u in de array stoppen? (minimaal 3)');
+    if(vraag < 3){
+        alert('U moet minimaal 3 namen invoeren.');
+    } if(vraag > 3){
+    
     }
-    var vraag = prompt('Type een naam in');
-    namen.push(vraag);
+
+
 }
 
-console.log(namen);
+arrayNames();
 
 
 
