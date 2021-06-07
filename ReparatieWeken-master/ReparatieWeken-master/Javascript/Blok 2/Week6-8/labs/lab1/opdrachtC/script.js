@@ -1,30 +1,28 @@
 var container = document.getElementById('container');
-var count = 0;
 
-for(i=1; i <= 30; i++){
-    var buttons = document.createElement('button');
-    container.appendChild(buttons);
-    buttons.innerHTML = i;
+for(i = 1; i <= 30; i++){
+    var button = document.createElement('button');
+        container.appendChild(button);
+        button.innerHTML = i;
+        button.style.backgroundColor = 'green';
 
-    if(i == 5){
-        buttons.onclick = function(){
-            count++;
-            console.log(count);
-            if(count > 0){
-                this.style.backgroundColor = "red";
-                if(count > 1){
-                    this.style.backgroundColor = "purple";
-                    if(count > 2){
-                        this.style.backgroundColor = "blue";
-                        if(count > 3){
-                            this.style.backgroundColor = "black";
-                            if(count > 4){
-                                this.style.visibility = "hidden";
-                            }
-                        }
-                    }
-                }
-            }
+    button.onclick = function(){
+        var buttonColor = this.style.backgroundColor;
+        if(buttonColor == 'green'){
+            this.style.backgroundColor = 'red';
+        }
+        if(buttonColor == 'red'){
+            this.style.backgroundColor = 'purple';
+        }
+        if(buttonColor == 'purple'){
+            this.style.backgroundColor = 'black';
+        }
+        if(buttonColor == 'black'){
+            this.style.visibility = 'hidden';
         }
     }
 }
+
+
+
+
