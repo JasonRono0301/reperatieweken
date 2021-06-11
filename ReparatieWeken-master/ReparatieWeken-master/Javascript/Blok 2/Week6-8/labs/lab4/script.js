@@ -4,28 +4,20 @@ var knop = document.getElementById('knop');
 var uitkomst = "";
 var games = ['Fiets','Speen','breuk','bomen','draai'];
 
-knop.onclick = function(){
-    for(i = 0; i < games.length; i++){
-        if(woord.value == games[i]){
-            uitkomst = 'Correct';
-            i = games.length;
-        } else {
-            uitkomst = 'Niet gevonden.';
-        }
-        check.innerHTML = "<h1>" + uitkomst;
-    }
+knop.onclick = split;
 
-    var splitwoord = woord.value;
-    var split = splitwoord.split('');
+function split(){
+    var woordValue = woord.value;
+    var split = woordValue.split('');
     console.log(split);
 
-    for(i=0; i < games.length; i++){
-        var button = document.createElement('button');
-            check.appendChild(button);
-            button.innerHTML = split[i];
-    }
-}
+    for(i = 0; i < games.length; i++){
+        var letters = document.createElement('button');
+        check.appendChild(letters);
+        letters.innerHTML = split[i];
+    }    
 
+}
 
 
 
