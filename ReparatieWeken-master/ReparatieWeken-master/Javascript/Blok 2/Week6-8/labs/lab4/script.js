@@ -13,7 +13,18 @@ function split(){
 
     var woordValue = woord.value;
     var inputSplit = woordValue.split('');
-    console.log(inputSplit); 
+    console.log(inputSplit);
+    
+    for(i = 0; i < correctWordSplit.length; i++){
+        var buttons = document.createElement('button');
+        check.appendChild(buttons);
+        buttons.innerHTML = woordValue[i];
+
+        if(buttons.innerHTML == 'undefined'){
+            buttons.style.backgroundColor = 'red';
+            buttons.innerHTML = '.';
+        } 
+    }
 }
 
 
