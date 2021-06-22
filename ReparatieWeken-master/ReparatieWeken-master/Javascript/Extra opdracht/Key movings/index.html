@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key moving</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="blokje"></div>
+    </div>
+
+    <script>
+        var container = document.getElementById('container');
+        var blokje = document.getElementById('blokje');
+
+        var posTop = 10;
+        var posRight = 0;
+
+        window.onkeydown = function (event){
+            switch(event.key){
+                case 'w':
+                    if(posTop > 0){
+                        posTop = posTop + 50;
+                    }
+                    console.log('Het blokje gaat met 10 pixels omhoog');
+                    console.log(posTop);
+                    blokje.style.top + "px";
+                    break;
+                case 'a':
+                    console.log('het blokje gaat met 10 pixels naar links');
+                    break;
+                case 's':
+                    console.log('Het blokje gaat met 10 pixels naar beneden');
+                    break;
+                case 'd':
+                    console.log('Het blokje gaat met 10 pixels naar rechts');
+                    break;
+            } 
+        }
+    </script>
+</body>
+</html>
