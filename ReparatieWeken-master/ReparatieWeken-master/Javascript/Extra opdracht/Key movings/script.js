@@ -7,45 +7,45 @@
 
    window.onkeydown = function (event){
        switch(event.key){
-           case 'w':
+           case 'w'://Key event = UP.
                if(posTop > 0){
                    posTop = posTop - 10;
-               } else{
+                } else{
                    posTop = 200;
-               }
-               console.log('Het blokje gaat met 10 pixels omhoog');
-               console.log(posTop);
+                }
                blokje.style.top = posTop + "px";
+                    console.log('Het blokje gaat met 10 pixels omhoog');//Direction text when going up.
+                    console.log(posTop);
                break;
-           case 'a':
-            if(posRight > 0){
-                posRight = posRight - 10;
-            } else{
-                posRight = 450;
-            }
-            blokje.style.left = posRight + "px";
-                console.log(posRight);
-               console.log('het blokje gaat met 10 pixels naar links');
+           case 'a'://Key event = LEFT.
+                if(posRight > 0){
+                    posRight = posRight - 10;
+                } else{
+                    posRight = 450;
+                }
+                blokje.style.left = posRight + "px";
+                    console.log(posRight);
+                    console.log('het blokje gaat met 10 pixels naar links');//Direction text when going left.
+                break;
+           case 's'://Key event = DOWN.
+                if(posTop < 400){
+                    posTop = posTop + 10;
+                } else{
+                    posTop = 200;
+                }
+                blokje.style.top = posTop + "px";
+                    console.log(posTop);
+                    console.log('Het blokje gaat met 10 pixels naar beneden');//Direction text when going down.
                break;
-           case 's':
-            if(posTop < 400){
-                posTop = posTop + 10;
-            } else{
-                posTop = 200;
-            }
-            console.log(posTop);
-            blokje.style.top = posTop + "px";
-               console.log('Het blokje gaat met 10 pixels naar beneden');
-               break;
-           case 'd':
+           case 'd'://Key event = RIGHT.
                if(posRight < 900){
                    posRight = posRight + 10;
-               } else{
+                } else{
                    posRight = 450;
-               }
-               console.log(posRight);
-               blokje.style.left = posRight + "px";
-               console.log('Het blokje gaat met 10 pixels naar rechts');
+                }
+                blokje.style.left = posRight + "px";
+                    console.log(posRight);
+                    console.log('Het blokje gaat met 10 pixels naar rechts');//Direction text when going right.
                break;
        } 
    }
