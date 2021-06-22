@@ -1,19 +1,20 @@
 var container = document.getElementById('container');
 
-function makeBoardfuctie(rijen,kollommen){
-
-    for(kollommen = 0; kollommen < 10; kollommen++){//Create collums.
-        for(rijen = 0; rijen < 10; rijen++){//Create rows.
-            
+function makeBoardfunctie(rijen,kollommen){
+    for(a=0; a<rijen; a++){//Create rows.
+        var row = document.createElement('div');
+        row.id = 'row' + a;
+        container.appendChild(row);
+        for(i=0; i < kollommen; i++){//Create collums.
+            var blocks = document.createElement('div');
+            blocks.id = 'blokje ' + i;
+            row.appendChild(blocks);//Output in the container.
         }
-        var divs = document.createElement('div');
-        container.appendChild(divs);
-        divs.style.backgroundColor = 'red';
-        divs.style.width = '80px';
-        divs.style.height = '80px';
     }
-  
-
 }
 
-makeBoardfuctie();
+function id(e){
+    e.innerHTML = e.id;
+}
+
+makeBoardfunctie(8,8);
