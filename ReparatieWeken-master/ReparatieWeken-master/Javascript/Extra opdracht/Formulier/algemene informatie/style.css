@@ -3,3 +3,36 @@
     padding: 0;
 }
 
+#container{
+    margin: 50px auto;
+    padding: 100px;
+    width: 500px;
+    height: 400px;
+    background-color: orange;
+    border: 3px solid green;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    border: black 4px solid;
+    color: black;
+    font-weight: 700;
+}
+
+#resultaat{
+    margin-top: 50px;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    border: 3px red solid;
+}
