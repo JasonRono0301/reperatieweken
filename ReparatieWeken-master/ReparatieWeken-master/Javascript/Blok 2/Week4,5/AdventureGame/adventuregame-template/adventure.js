@@ -27,10 +27,6 @@ function TheGame(){
         description.innerHTML = descriptions[0];
         button1.innerHTML = 'Start';
         button1.addEventListener('click',level1);
-        button2.style.visibility = 'hidden';
-        button3.style.visibility = 'hidden';
-        inventory.style.visibility = 'hidden';
-
     }
     intro();
 
