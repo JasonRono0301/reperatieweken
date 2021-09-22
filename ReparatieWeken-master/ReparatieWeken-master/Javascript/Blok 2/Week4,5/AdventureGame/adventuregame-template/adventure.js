@@ -11,36 +11,24 @@ var button3 = document.getElementById('button3');
 
 var background = document.getElementById('game-container');
 
-function TheGame(){
-    var titles = [
+function theGame(){
+    
+    var levelTitles = [
         'Intro',
-        'Level 1'
-
     ];
-    var descriptions = [
-        'Druk op de knop',
-        'Open de deur'
+
+    var levelDescription = [
+        'Welkom bij de game'
     ];
 
     function intro(){
-        title.innerHTML = titles[0];
-        description.innerHTML = descriptions[0];
-        button1.innerHTML = 'Start';
-        button1.addEventListener('click',level1);
+        title.innerHTML = levelTitles[0];
+        description.innerHTML = levelDescription[0];
     }
     intro();
-
-    function level1(){
-        title.innerHTML = titles[1];
-        description.innerHTML = descriptions[1];
-        button1.addEventListener('click', intro);
-        button1.innerHTML = 'Open';
-    }
-
 }
 
-TheGame();
-
+theGame();
 
 
 
