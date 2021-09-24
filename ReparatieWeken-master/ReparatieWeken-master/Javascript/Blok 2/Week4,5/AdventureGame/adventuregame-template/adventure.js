@@ -14,18 +14,27 @@ var background = document.getElementById('game-container');
 function theGame(){
     
     var levelTitles = [
-        'Intro',
+        'Intro:',
+        'Level 1:'
     ];
 
     var levelDescription = [
-        'Welkom bij de game'
+        'Welkom bij de game',
+        'Open de deur'
     ];
 
-    function intro(){
-        title.innerHTML = levelTitles[0];
-        description.innerHTML = levelDescription[0];
+    title.innerHTML = levelTitles[0];
+    description.innerHTML = levelDescription[0];
+    inventory.innerHTML = 'Druk op start';
+    button1.innerHTML = '>>>';
+    button2.innerHTML = 'Start';
+    button3.innerHTML = '<<<';
+
+    function level1(){
+        title.innerHTML = levelTitles[1];
+        description.innerHTML = levelDescription[1];
     }
-    intro();
+
 }
 
 theGame();

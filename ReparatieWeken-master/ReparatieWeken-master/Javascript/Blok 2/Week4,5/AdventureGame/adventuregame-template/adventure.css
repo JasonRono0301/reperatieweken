@@ -1,15 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: black;
-
 }
 
 #game-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
     background-color: white;
-    margin-left: 300px;
-    margin-top: 130px;
-    padding-left: 250px;
-    height: 500px;
-    width: 800px;
-    border: 5px solid red;
+    font-family: sans-serif;
 }
+
+#game-buttons{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+button{
+    font-size: large;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#inventoryItem{
+    grid-column: 5;
+    margin-top: 50px;
+}
+
+#description{
+    margin-top: 50px;
+}
+
 
